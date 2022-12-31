@@ -15,7 +15,4 @@ public class SwingMain extends JFrame {
         add(mainPanel, BorderLayout.LINE_START);
         add(addPanel, BorderLayout.CENTER);
     }
-    public static void main(String[] args) {
-        new SwingMain().setVisible(true);
-    }
 }

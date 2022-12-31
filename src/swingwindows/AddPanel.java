@@ -2,8 +2,9 @@ package swingwindows;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.awt.geom.RoundRectangle2D;
-import javax.swing.border.*;
+import java.sql.SQLException;
+
+import static dbmsfunctions.DbmsFunc.con;
 
 public class AddPanel extends JPanel{
     public AddPanel() {initComponents();}
@@ -30,8 +31,7 @@ public class AddPanel extends JPanel{
         mark2TextField = new JTextField();
         mark3TextField = new JTextField();
         submit = new JButton("SUBMIT");
-
-
+        status = new JLabel("nothing", SwingConstants.CENTER);
 
         gbc.gridx = 0;
         gbc.gridy = 0;
@@ -83,13 +83,28 @@ public class AddPanel extends JPanel{
         gbc.gridx = 0;
         gbc.gridy = 10;
         add(submit, gbc);
-        submit.setFont(new Font("Verdana", Font.PLAIN, 18));
+        submit.setFont(new Font("Verdana", Font.BOLD, 18));
         submit.setBorderPainted(false);
         submit.setOpaque(true);
         submit.setContentAreaFilled(true);
         submit.setBackground(Color.decode("#5A8F7B"));
         submit.setForeground(Color.white);
         submit.setFocusPainted(false);
+        submit.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    con.add(regNoTextField.getText(), nameTextField.getText(), Integer.parseInt(mark1TextField.getText()), Integer.parseInt(mark2TextField.getText()), Integer.parseInt(mark3TextField.getText()));
+                } catch (SQLException ex) {
+                    throw new RuntimeException(ex);
+                }
+            }
+        });
+        gbc.gridx = 0;
+        gbc.gridy = 11;
+        status.setFont(new Font("Verdana", Font.PLAIN, 18));
+        add(status, gbc);
+        status.setVisible(true);
         setBackground(Color.white);
     }
     JLabel regNo;
@@ -103,10 +118,5 @@ public class AddPanel extends JPanel{
     JLabel mark3;
     JTextField mark3TextField;
     JButton submit;
-
-
-
-
-
-
+    JLabel status;
 }

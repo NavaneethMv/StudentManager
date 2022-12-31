@@ -1,4 +1,4 @@
-package dbmsfunctions;
+package swingwindows;
 
 import java.sql.*;
 
@@ -15,14 +15,20 @@ public class DbmsFunc {
             con = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/Student", "root", "Navaneeth@2230"
             );
+            if (con != null) {
+                System.out.println("Success");
+            }
+            else {
+                System.out.println("Nope");
+            }
         } catch (Exception e) {
             System.out.println("Connection error!");
         }
     }
-
-    public void add(String regNo, String name, int mark1, int mark2, int mark3) throws SQLException {
+    public static void add(String regNo, String name, int mark1, int mark2, int mark3) throws SQLException {
         Statement stmt = con.createStatement();
-        String query = String.format("INSERT INTO students(RegisterNumber, Name, Mark1, Mark2, Mark3) VALUES ('%s', '%s', '%d', '%d', '%d')", regNo, name, mark1, mark2, mark3);
-        ResultSet querySet = stmt.executeQuery(query);
+        String query = String.format("INSERT INTO students(RegisterNumber, Name, Mark1, Mark2, Mark3) VALUES ('%s', '%s', %d, %d, %d);", regNo, name, mark1, mark2, mark3);
+        stmt.executeUpdate(query);
+        con.close();
     }
 }

@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3407e5a1-2118-4186-bea7-df7a7c2cfd27" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/src/swingwindows/EditPanel.java" afterDir="false" />
+    <list default="true" id="3407e5a1-2118-4186-bea7-df7a7c2cfd27" name="Changes" comment="mysql connector">
+      <change afterPath="$PROJECT_DIR$/src/swingwindows/DbmsFunc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j_8_0_31.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j_8_0_31.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudentManager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/StudentManager.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dbmsfunctions/DbmsFunc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dbmsfunctions/DbmsFunc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/swingwindows/AddPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/swingwindows/AddPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/swingwindows/SwingMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/swingwindows/SwingMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,10 +48,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/sainived/mysql-connector-j-8.0.31.jar",
+    "last_opened_file_path": "/home/sainived/myThings/mysql-connector-j-8.0.31.jar",
     "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   },
   "keyToStringList": {
@@ -58,7 +60,14 @@
     ]
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="StudentManager" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SwingMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="swingwindows.SwingMain" />
       <module name="StudentManager" />
@@ -74,6 +83,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.SwingMain" />
       </list>
     </recent_temporary>
@@ -94,12 +104,36 @@
       <option name="project" value="LOCAL" />
       <updated>1672240314200</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Editing Tab">
+      <created>1672309634661</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672309634661</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Minor changes">
+      <created>1672309708335</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672309708335</updated>
+    </task>
+    <task id="LOCAL-00004" summary="mysql connector">
+      <created>1672309720365</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672309720365</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Editing Tab" />
+    <MESSAGE value="Minor changes" />
+    <MESSAGE value="mysql connector" />
+    <option name="LAST_COMMIT_MESSAGE" value="mysql connector" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
