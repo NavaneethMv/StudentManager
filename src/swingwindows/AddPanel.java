@@ -92,13 +92,13 @@ public class AddPanel extends JPanel{
         submit.setFocusPainted(false);
         submit.addActionListener(new ActionListener() {
             @Override
-            public void actionPerformed(ActionEvent e) {
-                try {
-                    con.add(regNoTextField.getText(), nameTextField.getText(), Integer.parseInt(mark1TextField.getText()), Integer.parseInt(mark2TextField.getText()), Integer.parseInt(mark3TextField.getText()));
-                } catch (SQLException ex) {
-                    throw new RuntimeException(ex);
-                }
-            }
+//            public void actionPerformed(ActionEvent e) {
+//                try {
+//                    con.add(regNoTextField.getText(), nameTextField.getText(), Integer.parseInt(mark1TextField.getText()), Integer.parseInt(mark2TextField.getText()), Integer.parseInt(mark3TextField.getText()));
+//                } catch (SQLException ex) {
+//                    throw new RuntimeException(ex);
+//                }
+//            }
         });
         gbc.gridx = 0;
         gbc.gridy = 11;
