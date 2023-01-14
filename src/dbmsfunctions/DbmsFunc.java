@@ -13,7 +13,7 @@ public class DbmsFunc {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/Student", "root", "Navaneeth@2230"
+                    "jdbc:mysql://localhost:3306/Student", "root", ""
             );
         } catch (Exception e) {
             System.out.println("Connection error!");
